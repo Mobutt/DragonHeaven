@@ -465,33 +465,58 @@ exports.BattleMovedex = {
 		type: "Water",
 		isZ: "pelipiumz",
 	},
-"sacredspiral": { 
+"fatalefinale": {
 		accuracy: 100,
-		basePower: 210,
+		basePower: 100,
 		category: "Special",
-		id: "sacredspiral",
+		id: "fatalefinale",
 		isViable: true,
-		name: "Sacred Spiral",
+		name: "Fatale Finale",
 		pp: 1,
 		priority: 0,
 		flags: {},
-		secondary: {
-			chance: 100,
+		onPrepareHit: function(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Cross Poison", target);
+		},
+		target: "normal",
+		type: "Poison",
+		isZ: "scolipediumz",
+	secondary: {
+			chance: 100,      
 			self: {
 				boosts: {
-					def: 1,
-					spd: 1,
+					atk: 3,
 					spe: 1,
 				},
 			},
 		},
+        }, 
+"underworldbash": {
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		id: "fatalefinale",
+		isViable: true,
+		name: "Fatale Finale",
+		pp: 1,
+		priority: 0,
+		flags: {},
 		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Hydro Vortex", target);
+			this.add('-anim', source, "Cross Poison", target);
 		},
 		target: "normal",
-		type: "Water",
-		isZ: "omastatiumz",
-	},
-	
+		type: "Poison",
+		isZ: "scolipediumz",
+	secondary: {
+			chance: 100,      
+			self: {
+				boosts: {
+					atk: 3,
+					spe: 1,
+				},
+			},
+		},
+        }, 	
 };
