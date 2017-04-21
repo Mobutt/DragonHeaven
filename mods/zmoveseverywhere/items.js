@@ -108,4 +108,22 @@ exports.BattleItems = {
         zMoveUser: ["Torkoal"],
         desc: "If the holder is Torkoal with the move Heat Wave, it can use Pyrotechnics.",
     },
+    "gengariumz": {
+        id: "gengariumz",
+        name: "Gengarium-Z",
+        onTakeItem: false,
+        zMove: "Underworld Bash",
+        zMoveFrom: "Shadow Ball",
+        zMoveUser: ["Gengar"],
+        desc: "If the holder is Gengar with the move Shadow Ball, it can use Underworld Bash.",
+    },     
+        "scolipediumz": {
+        id: "scolipediumz",
+        name: "Scolipedium-Z",
+        onTakeItem: false,
+        zMove: "Fatale Finale",
+        zMoveFrom: "Venom Drench",
+        zMoveUser: ["Scolipede"],
+        desc: "If the holder is Scolipede with the move Venom Drench, it can use Fatal Fury.",
+    },    
 };
