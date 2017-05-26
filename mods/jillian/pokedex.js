@@ -571,6 +571,22 @@ exports.BattlePokedex = {
          abilities: {0: "Iron Fist", 1: "Unburden", H: "Reckless"},
          evos: ["Does Not Evolve"],
          },
+     peashawl: {
+         num: 1000071,
+         species: "Peashawl",
+         types: ["Grass", "Dark"],
+         baseStats: {hp: 60, atk: 50, def: 70, spa: 85, spd: 80, spe: 85},
+         abilities: {0: "Cute Charm", H: "Dazzling"},
+         evos: ["pollifowl"],
+         },
+     pollifowl: {
+         num: 1000072,
+         species: "Pollifowl",
+         types: ["Grass","Fairy"],
+         baseStats: {hp: 85, atk: 60, def: 120, spa: 105, spd: 120, spe: 95},
+         abilities: {0: "Dazzling", 1: "Overgrow", H: "Prankster"},
+         evos: ["Does Not Evolve"],
+         },
       quagsire: {
 		inherit: true,
 		abilities: {0: "Water Absorb", H: "Unaware"},
